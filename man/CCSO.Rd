@@ -6,6 +6,25 @@
 \title{Champaign County Sheriff's Office Booking Data}
 \format{
 A tibble with 67764 observations of 31 variables:
+\itemize{
+\item\link{bookingDate} A date variable (formatted as yyyy-mm-dd)
+containing the date of arrest.
+\item\link{jacketNumber} A numeric vector designating a unique
+identifier for the person being arrested.
+\item\link{bookingNumber} A numeric variable indicating the booking
+number.
+\item\link{bookingTime} A time variable (formatted as hh:mm:ss)
+containing the time of arrest.
+\item\link{custodyClass} A character variable indicating the custody
+classification of the arrested individual. This is a
+designation that indicates the extent of security measures that
+must be in place for an inmate of a particular classification.
+Missing values are associated with short stays.
+\item\link{employmentStatus} A character vector indicating the
+employment status of the individual.
+\item\link{incarcerationReason} A character vector indicated the
+reason the arrest.
+}
 }
 \source{
 https://data.illinois.gov/dataset/jail-booking-data
