@@ -5,25 +5,75 @@
 \alias{CCSO}
 \title{Champaign County Sheriff's Office Booking Data}
 \format{
-A tibble with 67764 observations of 31 variables:
+A tibble with 67764 observations of 30 variables:
 \itemize{
-\item\link{bookingDate} A date variable (formatted as yyyy-mm-dd)
-containing the date of arrest.
-\item\link{jacketNumber} A numeric vector designating a unique
-identifier for the person being arrested.
-\item\link{bookingNumber} A numeric variable indicating the booking
+\item\link{bookingDate}: a date vector (formatted as yyyy-mm-dd)
+indicating the date of arrest.
+\item\link{jacketNumber}: a numeric vector designating a unique
+identifier for the individual being arrested.
+\item\link{bookingNumber}: a numeric vector indicating the booking
 number.
-\item\link{bookingTime} A time variable (formatted as hh:mm:ss)
-containing the time of arrest.
-\item\link{custodyClass} A character variable indicating the custody
+\item\link{bookingTime}: a time vector (formatted as hh:mm:ss)
+indicating the time of arrest.
+\item\link{custodyClass}: a character vector indicating the custody
 classification of the arrested individual. This is a
 designation that indicates the extent of security measures that
 must be in place for an inmate of a particular classification.
-Missing values are associated with short stays.
-\item\link{employmentStatus} A character vector indicating the
-employment status of the individual.
-\item\link{incarcerationReason} A character vector indicated the
+Missing values are associated with a short amount of time
+spent in jail.
+\item\link{employmentStatus}: a character vector indicating the
+employment status of the arrested individual.
+\item\link{incarcerationReason}: a character vector indicated the
 reason the arrest.
+\item\link{prisonerType}: a character vector indicating the type of
+prisoner.
+\item\link{releasedDate}: a date vector (formatted as yyyy-mm-dd)
+indicating the date of release from jail.
+\item\link{releasedReason}: a character vector indicating the reason
+for release. These include transfers to other jails and bond
+payments. A bond payment to a jail is money provided to release
+an arrested person before their trial. Not everyone pays the bond,
+and even among those who do, not everyone pays it right away.
+\item\link{releasedTime}: a time vector (formatted as hms)
+indicating the time of release.
+\item\link{charge}: a character vector indicating the processing code
+of the charge.
+\item\link{crimeCode}: a character vector indicating a description
+of the crime committed.
+\item\link{city}: a character vector indicating the arrested
+individual's home city.
+\item\link{state}: a character vector indicating the arrested
+individual's home state.
+\item\link{zipcode}: a character vector indicating the arrested
+individual's zipcode.
+\item\link{citizenship}: a character vector indicating the arrested
+individual's citizenship.
+\item\link{maritalStatus}: a character vector indicating the arrested
+individual's marital status.
+\item\link{military}: a character vector indicating whether or not the
+arrested individual served in the military, and which branch they
+served in if they did serve.
+\item\link{occupation}: a character vector indicating the arrested
+individual's occupation.
+\item\link{education}: a character vector indicating the
+educational status of the arrested individual.
+\item\link{arrestAgency}: a character vector indicating the arresting
+officer's home police department.
+\item\link{arrestAge}: a numeric vector indicating the arrested
+individual's age upon arrest.
+\item\link{releaseAge}: a numeric vector indicating the arrested
+individual's age upon release.
+\item\link{daysInJail}: a numeric vector indicating the number of
+days that the arrested individual spent in jail.
+\item\link{hours}: a numeric vector indicating the additional hours
+that an arrested individual spent in jail beyond the total days
+recorded.
+\item\link{minutes}: a numeric vector indicating the additional minutes
+that an arrested individual spent in jail beyond the total days
+and hours recorded.
+\item\link{seconds}: a numeric vector indicating the additional seconds
+that an arrested individual spent in jail beyond the total days,
+hours, and minutes recorded.
 }
 }
 \source{
