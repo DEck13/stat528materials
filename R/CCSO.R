@@ -8,7 +8,7 @@
 #'
 #' @format A tibble with 67764 observations of 30 variables:
 #' \itemize{
-#'   \item[bookingDate]: a date vector (formatted as yyyy-mm-dd) 
+#'   \item bookingDate: a date vector (formatted as yyyy-mm-dd) 
 #'   indicating the date of arrest.
 #'   \item[jacketNumber]: a numeric vector designating a unique 
 #'   identifier for the individual being arrested.
